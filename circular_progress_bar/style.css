@@ -11,7 +11,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.skill{
+.bar{
     width: 160px;
     height: 160px;
     /* background-color: rgb(75, 128, 179); */
@@ -46,7 +46,6 @@ circle{
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
     animation: anim 2s linear forwards;
-
 }
 svg{
     position: absolute;
