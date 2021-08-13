@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #d0d5d6;
+}
+.drops {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drop {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border-radius: 50% ;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+    15px 25px 10px rgba(0, 0, 0, 0.1), 15px 20px 20px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+}
+.drop::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50% ;
+}
+.drop::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 65px;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50% ;
+}
+.drop:nth-child(2) {
+  transform: scale(0.5) translate(-200px, 180px); 
+  border-radius: 50% ;
+}
+.drop:nth-child(3) {
+  transform: scale(0.55) translate(250px,-50px);
+  border-radius: 50% ;
+}
+.drop:nth-child(4) {
+  transform: scale(0.85) translate(100px, -200px);
+  border-radius: 50% ;
+}
+.drop:nth-child(5) {
+  transform: scale(0.75) translate(-220px, -100px);
+  border-radius: 50% ;
+}
+.drop:nth-child(6) {
+  transform: scale(0.40) translate(-50px, 400px);
+  border-radius: 50% ;
+}
+.drop:nth-child(7) {
+  transform: scale(0.65) translate(120px, 180px);
+  border-radius: 50% ;
+}
+.drop:nth-child(8) {
+  transform: scale(0.5) translate(-120px, -230px);
+  border-radius: 50% ;
+}
+.drop:nth-child(9) {
+  transform: scale(0.20) translate(-50px, -750px);
+  border-radius: 50% ;
+}
+.drop:nth-child(10) {
+  transform: scale(0.30) translate(-300px, 520px);
+  border-radius: 50% ;
+}
